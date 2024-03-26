@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\Enum;
+namespace Lodipay\DTO\Tests\Enum;
 
 enum Status: string
 {

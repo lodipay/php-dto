@@ -1,14 +1,14 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\DTO;
+namespace Lodipay\DTO\Tests\DTO;
 
 use Carbon\Carbon;
 use Symfony\Component\Serializer\Annotation\Context;
 use Symfony\Component\Serializer\Normalizer\DateTimeNormalizer;
-use Tsetsee\DTO\Attributes\MapFrom;
-use Tsetsee\DTO\Attributes\MapTo;
-use Tsetsee\DTO\DTO\TseDTO;
-use Tsetsee\DTO\Serializer\Normalizer\CarbonNormalizer;
+use Lodipay\DTO\Attributes\MapFrom;
+use Lodipay\DTO\Attributes\MapTo;
+use Lodipay\DTO\DTO\TseDTO;
+use Lodipay\DTO\Serializer\Normalizer\CarbonNormalizer;
 
 class TestDTO extends TseDTO
 {

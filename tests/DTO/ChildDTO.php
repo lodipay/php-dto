@@ -1,13 +1,13 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\DTO;
+namespace Lodipay\DTO\Tests\DTO;
 
 use Carbon\CarbonImmutable;
 use Symfony\Component\Serializer\Annotation\Context;
-use Tsetsee\DTO\Attributes\MapTo;
-use Tsetsee\DTO\DTO\TseDTO;
-use Tsetsee\DTO\Serializer\Normalizer\CarbonNormalizer;
-use Tsetsee\DTO\Tests\Enum\Status;
+use Lodipay\DTO\Attributes\MapTo;
+use Lodipay\DTO\DTO\TseDTO;
+use Lodipay\DTO\Serializer\Normalizer\CarbonNormalizer;
+use Lodipay\DTO\Tests\Enum\Status;
 
 class ChildDTO extends TseDTO
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\DTO;
+namespace Lodipay\DTO\Tests\DTO;
 
-use Tsetsee\DTO\DTO\TseDTO;
+use Lodipay\DTO\DTO\TseDTO;
 
 class Document extends TseDTO
 {

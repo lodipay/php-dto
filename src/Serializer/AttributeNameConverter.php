@@ -1,10 +1,10 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer;
+namespace Lodipay\DTO\Serializer;
 
+use Lodipay\DTO\Attributes\MapFrom;
+use Lodipay\DTO\Attributes\MapTo;
 use Symfony\Component\Serializer\NameConverter\AdvancedNameConverterInterface;
-use Tsetsee\DTO\Attributes\MapFrom;
-use Tsetsee\DTO\Attributes\MapTo;
 
 class AttributeNameConverter implements AdvancedNameConverterInterface
 {
@@ -14,8 +14,8 @@ class AttributeNameConverter implements AdvancedNameConverterInterface
      */
     public function normalize(
         string $propertyName,
-        string $className = null,
-        string $format = null,
+        ?string $className = null,
+        ?string $format = null,
         ?array $context = [],
     ): string {
         if (null !== $className) {
@@ -45,8 +45,8 @@ class AttributeNameConverter implements AdvancedNameConverterInterface
      */
     public function denormalize(
         string $propertyName,
-        string $className = null,
-        string $format = null,
+        ?string $className = null,
+        ?string $format = null,
         ?array $context = []
     ): string {
         if (null !== $className) {

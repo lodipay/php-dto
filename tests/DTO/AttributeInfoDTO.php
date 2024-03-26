@@ -1,9 +1,9 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\DTO;
+namespace Lodipay\DTO\Tests\DTO;
 
 use Symfony\Component\Serializer\Attribute\SerializedName;
-use Tsetsee\DTO\DTO\TseDTO;
+use Lodipay\DTO\DTO\TseDTO;
 
 class AttributeInfoDTO extends TseDTO
 {

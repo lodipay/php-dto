@@ -4,12 +4,12 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Tsetsee\\DTO\\": "src/"
+      "Lodipay\\DTO\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tsetsee\\DTO\\Tests\\": "tests/"
+      "Lodipay\\DTO\\Tests\\": "tests/"
     }
   },
   "authors": [

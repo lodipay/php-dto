@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer\Normalizer;
+namespace Lodipay\DTO\Serializer\Normalizer;
 
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
@@ -43,7 +43,7 @@ class CarbonNormalizer implements NormalizerInterface, DenormalizerInterface, Ca
      *
      * @throws \InvalidArgumentException
      */
-    public function normalize($object, string $format = null, array $context = [])
+    public function normalize($object, ?string $format = null, array $context = [])
     {
         if (!$object instanceof CarbonInterface) {
             throw new \InvalidArgumentException('The object must implement the "CarbonInterface".');
@@ -69,7 +69,7 @@ class CarbonNormalizer implements NormalizerInterface, DenormalizerInterface, Ca
         return $object->format($dateTimeFormat);
     }
 
-    public function supportsNormalization($data, string $format = null)
+    public function supportsNormalization($data, ?string $format = null)
     {
         return $data instanceof CarbonInterface;
     }
@@ -81,7 +81,7 @@ class CarbonNormalizer implements NormalizerInterface, DenormalizerInterface, Ca
      *
      * @throws NotNormalizableValueException
      */
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize($data, string $type, ?string $format = null, array $context = [])
     {
         $dateTimeFormat = $context[self::FORMAT_KEY] ?? null;
 
@@ -127,7 +127,7 @@ class CarbonNormalizer implements NormalizerInterface, DenormalizerInterface, Ca
         }
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization($data, string $type, ?string $format = null)
     {
         return isset(self::SUPPORTED_TYPES[$type]);
     }

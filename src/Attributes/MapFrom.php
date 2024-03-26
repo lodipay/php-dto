@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Attributes;
+namespace Lodipay\DTO\Attributes;
 
 #[\Attribute()]
 class MapFrom

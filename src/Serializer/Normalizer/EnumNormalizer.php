@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer\Normalizer;
+namespace Lodipay\DTO\Serializer\Normalizer;
 
 use Symfony\Component\Serializer\Exception\NotNormalizableValueException;
 use Symfony\Component\Serializer\Normalizer\CacheableSupportsMethodInterface;
@@ -16,7 +16,7 @@ class EnumNormalizer implements NormalizerInterface, DenormalizerInterface, Cach
      *
      * @throws \InvalidArgumentException
      */
-    public function normalize($object, string $format = null, array $context = [])
+    public function normalize($object, ?string $format = null, array $context = [])
     {
         if (!$object instanceof \BackedEnum) {
             throw new \InvalidArgumentException('The object must be Enum.');
@@ -25,7 +25,7 @@ class EnumNormalizer implements NormalizerInterface, DenormalizerInterface, Cach
         return $object->value;
     }
 
-    public function supportsNormalization($data, string $format = null)
+    public function supportsNormalization($data, ?string $format = null)
     {
         return $data instanceof \BackedEnum;
     }
@@ -37,7 +37,7 @@ class EnumNormalizer implements NormalizerInterface, DenormalizerInterface, Cach
      *
      * @throws NotNormalizableValueException
      */
-    public function denormalize($data, string $type, string $format = null, array $context = [])
+    public function denormalize($data, string $type, ?string $format = null, array $context = [])
     {
         if (!enum_exists($type)) {
             throw new NotNormalizableValueException(sprintf('%s is not enum', $type));
@@ -54,7 +54,7 @@ class EnumNormalizer implements NormalizerInterface, DenormalizerInterface, Cach
         }
     }
 
-    public function supportsDenormalization($data, string $type, string $format = null)
+    public function supportsDenormalization($data, string $type, ?string $format = null)
     {
         return enum_exists($type);
     }

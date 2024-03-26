@@ -1,7 +1,7 @@
 <?php
 
-use Tsetsee\DTO\Tests\DTO\Document;
-use Tsetsee\DTO\Tests\DTO\TestDTO;
+use Lodipay\DTO\Tests\DTO\Document;
+use Lodipay\DTO\Tests\DTO\TestDTO;
 
 describe('fromArray tests', function () {
     test('main test', function () {
