@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer\Normalizer;
+namespace Lodipay\DTO\Serializer\Normalizer;
 
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;

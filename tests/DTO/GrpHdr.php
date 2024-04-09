@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Tests\DTO;
+namespace Lodipay\DTO\Tests\DTO;
 
 use Symfony\Component\Serializer\Attribute\SerializedPath;
 

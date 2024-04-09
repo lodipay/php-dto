@@ -1,6 +1,6 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer\Normalizer;
+namespace Lodipay\DTO\Serializer\Normalizer;
 
 use Symfony\Component\Serializer\Exception\NotNormalizableValueException;
 use Symfony\Component\Serializer\Normalizer\CacheableSupportsMethodInterface;

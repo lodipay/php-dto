@@ -1,10 +1,10 @@
 <?php
 
-namespace Tsetsee\DTO\Serializer;
+namespace Lodipay\DTO\Serializer;
 
+use Lodipay\DTO\Attributes\MapFrom;
+use Lodipay\DTO\Attributes\MapTo;
 use Symfony\Component\Serializer\NameConverter\AdvancedNameConverterInterface;
-use Tsetsee\DTO\Attributes\MapFrom;
-use Tsetsee\DTO\Attributes\MapTo;
 
 class AttributeNameConverter implements AdvancedNameConverterInterface
 {
